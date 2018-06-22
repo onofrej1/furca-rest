@@ -53,6 +53,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 ['class' => 'yii\rest\UrlRule', 'controller' => 'page'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'article'],
             ],
         ],
     ],

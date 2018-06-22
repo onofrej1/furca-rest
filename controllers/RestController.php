@@ -12,6 +12,10 @@ class RestController extends Controller
 
     public function actionIndex()
     {
+      $fields = [];
+      $searchModel = (new \yii\base\DynamicModel(['id' => null, 'title' => null]))
+        ->addRule('id', 'integer');
+
         $filter = new ActiveDataFilter([
           'searchModel' => $this->modelClass.'Search'
         ]);
