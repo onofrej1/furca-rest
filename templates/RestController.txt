@@ -1,0 +1,13 @@
+<?php
+$code = <<<EOT
+<?php
+
+namespace app\controllers\\rest;
+
+class {$class} extends RestController
+{
+    public \$modelClass = '{$model}';
+}
+EOT;
+
+echo $code;

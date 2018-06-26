@@ -1,0 +1,18 @@
+<?php
+$code = <<<EOT
+<?php
+
+namespace {$namespace};
+
+use yii\db\ActiveRecord;
+
+class {$class} extends ActiveRecord
+{
+    public static function tableName()
+    {
+        return '{$table}';
+    }
+}
+EOT;
+
+echo $code;
